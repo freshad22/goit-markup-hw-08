@@ -1,0 +1,41 @@
+.footer {
+    background: var(--footer-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__contact--logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.logo__secondar--footer {
+    color: var(--primary-white-coor);
+}
+
+.address {
+    font-style: normal;
+}
+
+.address__maps {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--primary-white-coor);
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__mail, .address__tel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: var(--footer-contact-color);
+}
