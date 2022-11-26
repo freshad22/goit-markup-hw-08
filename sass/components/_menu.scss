@@ -5,34 +5,38 @@
     align-items: center;
     justify-content: center;
   
-    margin: 0;
+    margin-left: auto;
     padding: 0;
-    background-color: transparent;
+    // background-color: transparent;
     cursor: pointer;
     border: none;
     border-radius: 50%;
     outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: #212121;
   }
-  
+  }
+
   @media (min-width: 768px) {
     .menu-toggle {
       display: none;
     }
   }
   
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  
   .menu-container {
     position: fixed;
     top: 0;
     left: 0;
+    
+    display: flex;
+    flex-direction: column;
+
     width: 100vw;
     height: 100vh;
-    padding: 32px;
-    background-color: #3f51b5;
+    padding: 48px 83px 48px 40px;
+    background-color: #ffffff;
     z-index: 999;
   
     transform: translateX(100%);
@@ -45,20 +49,69 @@
   
   .menu-container .menu-toggle {
     position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #fff;
+    top: 21px;
+    right: 21px;
+    fill: currentColor;
   }
   
-  .mobile-menu {
+  .menu__mobile {
     padding: 0;
-    margin: 0;
-    list-style: none;
+    margin-bottom: auto;
   }
   
-  .mobile-menu .link {
+  .menu__mobile .mobile__link {
     display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
+    margin-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+
+    color: #212121;
+  }
+
+  .menu__tel {
+    display: block;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    letter-spacing: 0.02em;
+    color: #2196F3;
+  }
+
+  .menu__mail {
+    display: block;
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.02em;
+
+    color: #757575;
+  }
+
+  .menu__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 64px;
+  }
+
+
+  .menu__link {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+  }
+
+  .menu__span {
+    margin-left: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
   }

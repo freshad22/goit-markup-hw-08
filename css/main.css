@@ -1036,13 +1036,15 @@ textarea:focus-visible {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0;
+  margin-left: auto;
   padding: 0;
-  background-color: transparent;
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  background-color: #212121;
 }
 
 @media (min-width: 768px) {
@@ -1050,19 +1052,21 @@ textarea:focus-visible {
     display: none;
   }
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .menu-container {
   position: fixed;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
+  padding: 48px 83px 48px 40px;
+  background-color: #ffffff;
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -1079,20 +1083,70 @@ textarea:focus-visible {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
+  top: 21px;
+  right: 21px;
+  fill: currentColor;
 }
 
-.mobile-menu {
+.menu__mobile {
   padding: 0;
-  margin: 0;
-  list-style: none;
+  margin-bottom: auto;
 }
 
-.mobile-menu .link {
+.menu__mobile .mobile__link {
   display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.menu__tel {
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.menu__mail {
+  display: block;
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.menu__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 64px;
+}
+
+.menu__link {
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.menu__span {
+  margin-left: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }/*# sourceMappingURL=main.css.map */
