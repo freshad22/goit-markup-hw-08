@@ -62,31 +62,30 @@
             >
               <svg class="contact__icons" width="10" height="16">
                 <use href="./images/icons.svg.svg#tel"></use></svg
-              >+38 096 111 11 11
+              >+38 096 111 11 11  
             </a>
           </li>
         </ul>
 
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        <svg class="menu_icon" width="24" height="24">
-          <use href="./images/icons.svg.svg#menu"></use>
-        </svg>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="мобільне меню">
+            <use class="menu-btn" href="./images/icons.svg.svg#menu"></use>
+          </svg>
         </button>
 
       </div>
+
+      
     </header>
 
     <main>
       <!--Шапка-->
-      <!-- <section class="hat">
+      <section class="hat">
         <div class="hero container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open class="hero_btn btn" type="button">Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Особливості -->
       <!-- <section class="features section">
@@ -643,50 +642,60 @@
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg class="menu_close" width="24" height="24">
-          <use href="./images/icons.svg.svg#close_m"></use>
+        <svg width="40" height="40" aria-label="мобільне меню">
+        <use class="menu-close" href="./images/icons.svg.svg#close_m"></use>
         </svg>
       </button>
 
-      <ul class="menu__mobile">
-        <li><a href="./index.html" class="mobile__link">Студія</a></li>
-        <li><a href="./portfolio.html" class="mobile__link">Портфоліо</a></li>
-        <li><a href="#" class="mobile__link">Контакти</a></li>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./index.html"
+            >Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./portfolio.html"
+            >Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./index.html"
+            >Контакти</a>
+        </li>
       </ul>
 
-      <ul class="menu__contact">
-        <li>
-          <a class="menu__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link mobile-contacts--tel" href="tel:+380961111111"> +38 096 111 11 11</a>
         </li>
-        <li>
-          <a class="menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link mobile-contacts--mail" href="mailto:info@devstudio.com">
+            info@devstudio.com</a>
         </li>
       </ul>
 
-      <ul class="menu__social">
-        <li>
-          <a class="menu__link" href="https://www.instagram.com/"
+      <ul class="mobile-social">
+        <li class="mobile-social__item">
+          <a href="https://www.instagram.com/"
           aria-label="значок instagram"
           target="_blank"
-          rel="nofollow noopener noreferre">Instagram<span class="menu__span"></span></a>
+          rel="nofollow noopener noreferre" class="mobile-social">Instagram</a>
         </li>
-        <li>
-          <a class="menu__link" href="https://twitter.com/?lang=uk"
+        <li class="mobile-social__item">
+          <a href="https://twitter.com/?lang=uk"
           aria-label="значок twitter"
           target="_blank"
-          rel="nofollow noopener noreferre">Twitter<span class="menu__span"></span></a>
+          rel="nofollow noopener noreferre" class="mobile-social">Twitter</a>
         </li>
-        <li>
-          <a class="menu__link" href="https://uk-ua.facebook.com/"
+        <li class="mobile-social__item">
+          <a href="https://uk-ua.facebook.com/"
           aria-label="значок facebook"
           target="_blank"
-          rel="nofollow noopener noreferre">Facebook<span class="menu__span"></span></a>
+          rel="nofollow noopener noreferre" class="mobile-social">Facebook</a>
         </li>
-        <li>
-          <a class="menu__link" href="https://www.linkedin.com/"
+        <li class="mobile-social__item">
+          <a href="https://www.linkedin.com/"
           aria-label="значок linkedin"
           target="_blank"
-          rel="nofollow noopener noreferre">LinkedIn</a>
+          rel="nofollow noopener noreferre" class="mobile-social">LinkedIn</a>
         </li>
       </ul>
     </div>
