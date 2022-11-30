@@ -1,12 +1,12 @@
 .hat {
-    max-width: 1600px;
-    height: 600px;
+    max-width: 480px;
+    height: 400px;
 
     margin-left: auto;
     margin-right: auto;
 
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
     text-align: center;
     background-image: linear-gradient(
@@ -18,23 +18,44 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--background-color-hero);
+
+@media screen and (min-width: $tablet) {
+        max-width: 768px;
+        height: 400px;
+}
+@media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 }
 
 .hero__title {
     margin-bottom: 30px;
-    width: 696px;
+    width: 360px;
     margin-right: auto;
     margin-left: auto;
 
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
+    font-size: 26px;
+    line-height: calc(42 / 26);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-coor);
+
+    @media screen and (min-width: $desktop) {
+        width: 696px;
+        font-size: 44px;
+        line-height: calc(60 / 44);
+}
 }
 
 .hero_btn {
-    padding: 10px 32px;
+    padding: 10px 24px;
+
+    @media screen and (min-width: $desktop) {
+        padding: 10px 32px;
+}
 }
