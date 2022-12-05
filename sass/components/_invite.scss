@@ -1,5 +1,10 @@
 .invite {
-    margin-left: 70px;
+    @media screen  and (max-width: 767px) {
+        margin-top: 60px;
+    }
+    @media screen  and (min-width: $desktop) {
+        margin-left: 70px;
+    }
 }
 
 .invite__after {
@@ -13,7 +18,15 @@
 }
 
 .invite__list {
-    display: flex; 
+    display: flex;
+    justify-content: center;
+
+    @media screen  and (min-width: $tablet) {
+        display: flex;
+    }
+    @media screen  and (min-width: $desktop) {
+        display: flex;
+    } 
 }
 
 .invite__item:not(:last-child) {

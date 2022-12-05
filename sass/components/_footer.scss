@@ -1,20 +1,29 @@
 .footer {
-    background: var(--footer-background);
+    background-color: var(--footer-background);
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .footer__container {
-    text-align: center;
 
-    @media screen  and (min-width: $tablet) {
-        display: flex;
-        align-items: baseline;
+    @media screen  and (max-width: 1199px) {
+        text-align: center;
     }
+
     @media screen  and (min-width: $desktop) {
         display: flex;
         align-items: baseline;
     }   
+}
+
+.footer__address {
+    
+    @media screen  and (min-width: $tablet) {
+        display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    }
+    
 }
 
 .footer__contact--logo {
@@ -38,7 +47,11 @@
 }
 
 .address__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen  and (min-width: $desktop) {
+        margin-bottom: 9px;
+    }
 }
 
 .address__mail, .address__tel {
