@@ -352,7 +352,7 @@ button {
 }
 
 .hat {
-  max-width: 480px;
+  max-width: 1600px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -365,20 +365,15 @@ button {
   background-position: center;
   background-image: -webkit-gradient(linear, left bottom, left top, from(var(--linear-gradient-hero)), to(var(--linear-gradient-hero))), url(../images/hero/img_480.jpg);
   background-image: linear-gradient(0deg, var(--linear-gradient-hero), var(--linear-gradient-hero)), url(../images/hero/img_480.jpg);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--linear-gradient-hero)), to(var(--linear-gradient-hero))), url(../images/hero/img_768.jpg);
-  background-image: linear-gradient(0deg, var(--linear-gradient-hero), var(--linear-gradient-hero)), url(../images/hero/img_768.jpg);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--linear-gradient-hero)), to(var(--linear-gradient-hero))), url(../images/hero/img_1600.jpg);
-  background-image: linear-gradient(0deg, var(--linear-gradient-hero), var(--linear-gradient-hero)), url(../images/hero/img_1600.jpg);
 }
 @media screen and (min-width: 768px) {
   .hat {
-    max-width: 768px;
     height: 400px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hat {
-    max-width: 1600px;
+    max-width: 3200px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -390,10 +385,22 @@ button {
     background-image: linear-gradient(0deg, var(--linear-gradient-hero), var(--linear-gradient-hero)), url(../images/hero/img_960.jpg);
   }
 }
+@media screen and (min-width: 481px) {
+  .hat {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(var(--linear-gradient-hero)), to(var(--linear-gradient-hero))), url(../images/hero/img_768.jpg);
+    background-image: linear-gradient(0deg, var(--linear-gradient-hero), var(--linear-gradient-hero)), url(../images/hero/img_768.jpg);
+  }
+}
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hat {
     background-image: -webkit-gradient(linear, left bottom, left top, from(var(--linear-gradient-hero)), to(var(--linear-gradient-hero))), url(../images/hero/img_1536.jpg);
     background-image: linear-gradient(0deg, var(--linear-gradient-hero), var(--linear-gradient-hero)), url(../images/hero/img_1536.jpg);
+  }
+}
+@media screen and (min-width: 769px) {
+  .hat {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(var(--linear-gradient-hero)), to(var(--linear-gradient-hero))), url(../images/hero/img_1600.jpg);
+    background-image: linear-gradient(0deg, var(--linear-gradient-hero), var(--linear-gradient-hero)), url(../images/hero/img_1600.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
