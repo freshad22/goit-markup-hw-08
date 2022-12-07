@@ -398,8 +398,8 @@ button {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hat {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(var(--linear-gradient-hero)), to(var(--linear-gradient-hero))), url(../images/hero/img_1600.jpg);
-    background-image: linear-gradient(0deg, var(--linear-gradient-hero), var(--linear-gradient-hero)), url(../images/hero/img_1600.jpg);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(var(--linear-gradient-hero)), to(var(--linear-gradient-hero))), url(../images/hero/img_3200.jpg);
+    background-image: linear-gradient(0deg, var(--linear-gradient-hero), var(--linear-gradient-hero)), url(../images/hero/img_3200.jpg);
   }
 }
 
@@ -464,6 +464,11 @@ button {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .features__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
