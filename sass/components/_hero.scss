@@ -9,26 +9,78 @@
     padding-bottom: 118px;
 
     text-align: center;
+
+    background-color: var(--background-color-hero);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 768px;
+        height: 400px;
+}
+    @media screen and (min-width: $desktop) {
+        max-width: 1600px;
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+}
+    // mobile screen
     background-image: linear-gradient(
       0deg,
       var(--linear-gradient-hero),
       var(--linear-gradient-hero)
     ),
-    url(../images/hero/hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--background-color-hero);
+    url(../images/hero/img_480.jpg);
+    // mobile screen retina
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+      0deg,
+      var(--linear-gradient-hero),
+      var(--linear-gradient-hero)
+    ),
+    url(../images/hero/img_960.jpg);
+    }
+    // tablet screen
+    background-image: linear-gradient(
+      0deg,
+      var(--linear-gradient-hero),
+      var(--linear-gradient-hero)
+    ),
+    url(../images/hero/img_768.jpg);
+    // tablet screen retina
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+      0deg,
+      var(--linear-gradient-hero),
+      var(--linear-gradient-hero)
+    ),
+    url(../images/hero/img_1536.jpg);
+    }
+    // desktop screen
+    background-image: linear-gradient(
+      0deg,
+      var(--linear-gradient-hero),
+      var(--linear-gradient-hero)
+    ),
+    url(../images/hero/img_1600.jpg);
+    // desktop screen retina
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+      0deg,
+      var(--linear-gradient-hero),
+      var(--linear-gradient-hero)
+    ),
+    url(../images/hero/img_1600.jpg);
+    }
 
-@media screen and (min-width: $tablet) {
-        max-width: 768px;
-        height: 400px;
-}
-@media screen and (min-width: $desktop) {
-    max-width: 1600px;
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
+
 }
 
 .hero__title {

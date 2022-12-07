@@ -4,10 +4,23 @@
 
 .filters__list {
     display: flex;
-    justify-content: center;
     gap: 8px;
 
-    margin-bottom: 50px;
+    @media screen  and (max-width: 767px) {
+        flex-wrap: wrap;
+        
+        margin-bottom: 40px;
+    }
+
+    @media screen  and (min-width: $tablet) {
+        justify-content: center;
+        
+        margin-bottom: 30px;
+    }
+
+    @media screen  and (min-width: $desktop) {
+        margin-bottom: 50px;
+    }
 }
 
 .filters__btn {
@@ -21,30 +34,51 @@
     background-color: var(--filters-btn-bg);
 
     transition: background-color var(--time) var(--cubic-bezier), color var(--time) var(--cubic-bezier), box-shadow var(--time) var(--cubic-bezier);
-}
 
-.filters__btn:focus,
-.filters__btn:hover {
+    &:focus,
+    &:hover {
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--primary-white-coor);
 }
+}
 
 .offers__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    @media screen  and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 .offers__item {
-    flex-basis: calc((100% - 30px * 2) / 3);
+    @media screen  and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
 
+    @media screen  and (min-width: $tablet) {
+        flex-basis: calc((100% - 30px)/2);
+    }
+
+    @media screen  and (min-width: $desktop) {
+        flex-basis: calc((100% - 30px * 2) / 3);
+    }
     transition: box-shadow var(--time) var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 }
 
-.offers__item:hover,
-.offers__item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.offers__link {
+
+    @media screen  and (min-width: $tablet) and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        flex-grow: 1;
+    }
 }
 
 .content {
@@ -84,6 +118,10 @@
     background-color: var(--primary-white-coor);
     border: 1px solid var(--border-filters);
     border-top: none;
+
+    @media screen  and (min-width: $tablet) and (max-width: 1199px) {
+        flex-grow: 1;
+    }
 
 }
 

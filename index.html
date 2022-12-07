@@ -149,7 +149,8 @@
               <div class="gallery__wrapper">
                 <img
                   class="gallery__imgs"
-                  src="./images/engaged/img.jpg"
+                  srcset="./images/engaged/img_370.jpg 1x, ./images/engaged/img_740.jpg 2x"
+                  src="./images/engaged/img_370.jpg"
                   alt="Пише код на клавіатурі"
                   class="photo"
                   width="370"
@@ -164,7 +165,8 @@
               <div class="gallery__wrapper">
                 <img
                   class="gallery__imgs"
-                  src="./images/engaged/img1.jpg"
+                  srcset="./images/engaged/img_370-1.jpg 1x, ./images/engaged/img_740-1.jpg 2x"
+                  src="./images/engaged/img_370-1.jpg"
                   alt="Дивитися у телефона"
                   class="photo"
                   width="370"
@@ -179,7 +181,8 @@
               <div class="gallery__wrapper">
                 <img
                   class="gallery__imgs"
-                  src="./images/engaged/img2.jpg"
+                  srcset="./images/engaged/img_370-2.jpg 1x, ./images/engaged/img_740-2.jpg 2x"
+                  src="./images/engaged/img_370-2.jpg"
                   alt="Малює на планшеті"
                   class="photo"
                   width="370"
@@ -201,10 +204,20 @@
           <ul class="team__list">
             <li class="team__item">
               <img
-                src="./images/team/igor.jpg"
-                alt="Чоловік в окулярах в коричневой рубашке"
-                width="270"
-              />
+                  class="content__photo"
+                  srcset="
+                    ./images/team/img_270.jpg 270w,
+                    ./images/team/img_354.jpg 354w,
+                    ./images/team/img_450.jpg 450w,
+                    ./images/team/img_540.jpg 540w,
+                    ./images/team/img_708.jpg 708w,
+                    ./images/team/img_900.jpg 900w
+                  "
+                  src="./images/filters/img_450.jpg 370w,"
+                  alt="Чоловік в окулярах в коричневой рубашке"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  loading="lazy"
+                />
               <div class="card">
                 <h3 class="card__title">Ігор Дем'яненко</h3>
                 <p class="card__after">Product Designer</p>
@@ -258,10 +271,20 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/team/olga.jpg"
-                alt="Жінка блондінка в окулярах"
-                width="270"
-              />
+                  class="content__photo"
+                  srcset="
+                    ./images/team/img_270-1.jpg 270w,
+                    ./images/team/img_354-1.jpg 354w,
+                    ./images/team/img_450-1.jpg 450w,
+                    ./images/team/img_540-1.jpg 540w,
+                    ./images/team/img_708-1.jpg 708w,
+                    ./images/team/img_900-1.jpg 900w
+                  "
+                  src="./images/filters/img_450-1.jpg 370w,"
+                  alt="Жінка блондінка в окулярах"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  loading="lazy"
+                />
               <div class="card">
                 <h3 class="card__title">Ольга Рєпіна</h3>
                 <p class="card__after">Frontend Developer</p>
@@ -315,10 +338,21 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/team/mykola.jpg"
-                alt="Чоловік в голубій сорочці"
-                width="270"
-              />
+                  class="content__photo"
+                  srcset="
+                    ./images/team/img_270-2.jpg 270w,
+                    ./images/team/img_354-2.jpg 354w,
+                    ./images/team/img_450-2.jpg 450w,
+                    ./images/team/img_540-2.jpg 540w,
+                    ./images/team/img_708-2.jpg 708w,
+                    ./images/team/img_900-2.jpg 900w
+                  "
+                  src="./images/filters/img_450-2.jpg 370w,"
+                  alt="Чоловік в голубій сорочці"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  loading="lazy"
+                />
+              </picture>
               <div class="card">
                 <h3 class="card__title">Микола Тарасов</h3>
                 <p class="card__after">Marketing</p>
@@ -372,10 +406,20 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/team/myhailo.jpg"
-                alt="Чоловік в окулярах і чорній футболці"
-                width="270"
-              />
+                  class="content__photo"
+                  srcset="
+                    ./images/team/img_270-3.jpg 270w,
+                    ./images/team/img_354-3.jpg 354w,
+                    ./images/team/img_450-3.jpg 450w,
+                    ./images/team/img_540-3.jpg 540w,
+                    ./images/team/img_708-3.jpg 708w,
+                    ./images/team/img_900-3.jpg 900w
+                  "
+                  src="./images/filters/img_450-3.jpg 370w,"
+                  alt="Чоловік в окулярах і чорній футболці"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  loading="lazy"
+                />
               <div class="card">
                 <h3 class="card__title">Михайло Єрмаков</h3>
                 <p class="card__after">UI Designer</p>
