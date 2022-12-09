@@ -187,8 +187,9 @@ button {
 }
 @media screen and (max-width: 767px) {
   .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -373,7 +374,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .hat {
-    max-width: 3200px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -714,7 +715,7 @@ button {
   margin-right: auto;
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 33px;
+  font-size: 28px;
   line-height: 1.1785714286;
   text-align: center;
   color: var(--title-text-color);
